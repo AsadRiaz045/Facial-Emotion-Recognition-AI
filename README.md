@@ -1,44 +1,44 @@
 # 🧠 Real-time Facial Emotion Recognition using MobileNetV2
 
-![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
-![TensorFlow](https://img.shields.io/badge/TensorFlow-2.12-orange.svg)
-![Streamlit](https://img.shields.io/badge/Streamlit-Framework-red.svg)
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge.svg)](https://facial-emotion-recognition-ai-jndp2fzqdhbessyy5j44ry.streamlit.app/)
+![Python](https://img.shields.io/badge/Python-3.11-blue.svg)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-2.x-orange.svg)
 
-This project is a high-performance, real-time facial emotion recognition system developed as a final project for **Digital Image Processing**. It uses **MobileNetV2** (Transfer Learning) to classify human emotions into 7 distinct categories with high accuracy and speed.
+This project is a high-performance facial emotion recognition system developed as a final project for **Digital Image Processing**. It utilizes **MobileNetV2** (Transfer Learning) to classify 7 distinct human emotions in real-time through a web browser or local webcam.
 
-
+## 🚀 Live Demo
+Experience the project live in your browser:  
+👉 **[Live Emotion Detector App](https://facial-emotion-recognition-ai-jndp2fzqdhbessyy5j44ry.streamlit.app/)**
 
 ---
 
 ## 🌟 Key Features
-* **7 Emotion Classes:** Detects Angry, Disgust, Fear, Happy, Neutral, Sad, and Surprise.
-* **Hybrid Interface:** Run it as a **Local OpenCV window** or a **Streamlit Web App**.
-* **Temporal Smoothing:** Implemented a `deque` buffer to average predictions, making the bounding box labels stable and flicker-free.
-* **Dynamic Colors:** Bounding boxes change colors based on the detected emotion (e.g., Green for Happy, Red for Angry).
-* **Cross-Platform:** Rebuilt architecture ensures the model loads perfectly on both Keras 2 and Keras 3 environments.
+* **7 Emotion Classes:** Angry, Disgust, Fear, Happy, Neutral, Sad, and Surprise.
+* **Hybrid Interface:** Built to run as a local Python script or a Cloud-deployed Streamlit Web App.
+* **WebRTC Integration:** Uses `streamlit-webrtc` for seamless real-time video streaming in the browser.
+* **Optimized Architecture:** Rebuilt MobileNetV2 backbone to ensure compatibility across different Keras versions.
+* **Visual Feedback:** Dynamic color-coded bounding boxes for each emotion (e.g., Green for Happy, Red for Angry).
 
----
-
-## 🛠️ Technology Stack
-* **Deep Learning Framework:** TensorFlow & Keras
-* **Base Model:** MobileNetV2 (Feature Extractor)
-* **Computer Vision:** OpenCV (Haar Cascades for Face Detection)
-* **Web UI:** Streamlit
-* **Language:** Python 3.11
+## 🛠️ Tech Stack
+* **Deep Learning:** TensorFlow, Keras (MobileNetV2)
+* **Computer Vision:** OpenCV (Haar Cascades for face detection)
+* **Web Framework:** Streamlit & Streamlit-WebRTC
+* **Data Processing:** NumPy & Python
 
 ---
 
 ## 📂 Project Structure
-* `webcam.py`: The main hybrid script (OpenCV + Streamlit).
-* `emotion_model.h5`: Pre-trained weights for the MobileNetV2 model.
-* `requirements.txt`: List of necessary Python libraries.
-* `haarcascade_frontalface_default.xml`: OpenCV's face detection model.
+* `webcam.py`: Main hybrid application script.
+* `emotion_model.h5`: Pre-trained model weights.
+* `requirements.txt`: Configuration for Cloud deployment.
+* `README.md`: Project documentation.
 
----
-
-## 🚀 Installation & Usage
-
-### 1. Clone the repository
-```bash
-git clone [https://github.com/AsadRiaz045/Facial-Emotion-Recognition-AI.git](https://github.com/AsadRiaz045/Facial-Emotion-Recognition-AI.git)
-cd Facial-Emotion-Recognition-AI
+## 📦 Local Installation & Setup
+1. **Clone the repository:**
+   ```bash
+   git clone [https://github.com/AsadRiaz045/Facial-Emotion-Recognition-AI.git](https://github.com/AsadRiaz045/Facial-Emotion-Recognition-AI.git)
+   cd Facial-Emotion-Recognition-AI
+##2.Install Dependencies
+    pip install -r requirements.txt
+##3.Run Locally
+      python webcam.py

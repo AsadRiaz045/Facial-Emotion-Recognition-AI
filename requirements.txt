@@ -1,0 +1,6 @@
+tensorflow==2.12.0
+keras==2.12.0
+numpy==1.23.5
+opencv-python
+streamlit
+protobuf==4.25.8

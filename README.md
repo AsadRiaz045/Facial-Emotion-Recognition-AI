@@ -1,4 +1,4 @@
-# 🧠 Real-time Facial Emotion Recognition using MobileNetV2
+# 🧠 Real-time Facial Emotion Recognition using
 
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge.svg)](https://facial-emotion-recognition-ai-jndp2fzqdhbessyy5j44ry.streamlit.app/)
 ![Python](https://img.shields.io/badge/Python-3.11-blue.svg)
